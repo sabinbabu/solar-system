@@ -447,8 +447,9 @@ a {
   }
 
   .planet-information {
-    top: -25rem;
-    left: -7rem;
+    position: relative;
+    top: -24rem;
+    left: -6rem;
   }
 
   .planet-description {
