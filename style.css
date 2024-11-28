@@ -402,22 +402,22 @@ a {
 @media (max-width: 620px) {
   .sun {
     left: 40%;
-    height: 7rem;
-    width: 7rem;
+    height: 6rem;
+    width: 6rem;
   }
   .planet {
     top: 0;
-    left: 0;
+    left: 3rem;
     border-radius: 50%;
   }
 
   @keyframes orbit {
     0% {
-      transform: rotate(0deg) translateY(150px);
+      transform: rotate(0deg) translateY(120px);
     }
 
     100% {
-      transform: rotate(360deg) translateY(150px);
+      transform: rotate(360deg) translateY(120px);
     }
   }
 
@@ -448,7 +448,75 @@ a {
 
   .planet-information {
     position: relative;
-    top: -24rem;
+    top: -16rem;
+    left: -6rem;
+  }
+
+  .planet-description {
+    display: none;
+  }
+
+  @keyframes moon {
+    0% {
+      transform: rotate(0deg) translateX(50px);
+    }
+
+    100% {
+      transform: rotate(360deg) translateX(50px);
+    }
+  }
+}
+
+@media (orientation: landscape) {
+  .sun {
+    left: 40%;
+    height: 6rem;
+    width: 6rem;
+  }
+  .planet {
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+  }
+
+  @keyframes orbit {
+    0% {
+      transform: rotate(0deg) translateY(120px);
+    }
+
+    100% {
+      transform: rotate(360deg) translateY(120px);
+    }
+  }
+
+  .jupiter {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .saturn {
+    height: 4.3rem;
+    width: 4.3rem;
+  }
+
+  .uranus,
+  .neptune {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .saturn-ring {
+    top: 1rem;
+    left: 1rem;
+  }
+
+  .speed-toolip {
+    display: none;
+  }
+
+  .planet-information {
+    position: relative;
+    top: -8rem;
     left: -6rem;
   }
 
