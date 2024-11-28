@@ -1,3 +1,4 @@
+/* global variables */
 * {
   margin: 0;
   font-family: "Crafty Girls";
@@ -9,6 +10,7 @@
   align-items: center;
 }
 
+/* background-container */
 .space {
   position: absolute;
   top: 0;
@@ -87,12 +89,13 @@
   box-shadow: 0px 0px 10px 7px #ffdd00, 0px 0px 30px 7px #ff8800;
 }
 
+/* planet-container */
 .planet-container {
   height: 100vh;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
 }
-
+/* planet-card-container */
 .planet-section {
   height: 100vh;
   scroll-snap-align: start;
